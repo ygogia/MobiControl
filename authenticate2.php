@@ -1,3 +1,10 @@
+<?php
+session_start();
+if(!isset($_SESSION['id']))
+{
+	header('Location: account.php');
+}
+?>
 <html>
 <head>
 <title>Salesforce Mobile Control Setup </title>

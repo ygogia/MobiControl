@@ -4,7 +4,7 @@ session_start();
 if(!isset($_POST['email']) && !isset($_POST['password']))
 {
 	$msg = "No email Password";
-	header('Location: index.php?message=$msg');
+	header('Location: index.php');
 }
 require_once (SOAP_CLIENT_BASEDIR.'/SforceEnterpriseClient.php');
 require_once ('../userAuth.php');
